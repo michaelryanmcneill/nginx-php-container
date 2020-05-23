@@ -1,4 +1,4 @@
-FROM: registry.redhat.io/rhel8/nginx-114
+FROM registry.redhat.io/rhel8/nginx-114
 
 ENV PHP_VERSION=7.3 \
     PHP_VER_SHORT=73 \
