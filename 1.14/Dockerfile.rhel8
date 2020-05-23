@@ -13,7 +13,6 @@ RUN yum -y module enable php:$PHP_VERSION && \
                   php-process php-soap php-opcache php-xml \
                   php-gmp php-pecl-apcu" && \
     yum install -y --setopt=tsflags=nodocs $INSTALL_PKGS && \
-    yum reinstall -y tzdata && \
     rpm -V $INSTALL_PKGS && \
     yum -y clean all --enablerepo='*'
 
